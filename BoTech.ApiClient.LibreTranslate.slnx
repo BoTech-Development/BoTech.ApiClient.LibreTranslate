@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BoTech.ApiClient.LibreTranslate.Tests/BoTech.ApiClient.LibreTranslate.Tests.csproj" Id="b0570f65-d554-4a7f-83b8-6cd8b0f5da92" />
+  <Project Path="BoTech.ApiClient.LibreTranslate/BoTech.ApiClient.LibreTranslate.csproj" />
+</Solution>
