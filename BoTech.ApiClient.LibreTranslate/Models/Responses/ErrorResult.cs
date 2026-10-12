@@ -8,6 +8,6 @@ namespace BoTech.ApiClient.LibreTranslate.Models.Responses
         /// The error message returned by the server.
         /// </summary>
         [JsonPropertyName("error")]
-        public string ErrorText { get; set; } = "";
+        public string ErrorText { get; init; } = "";
     }
 }

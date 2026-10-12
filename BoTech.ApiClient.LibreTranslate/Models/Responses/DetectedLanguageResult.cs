@@ -8,12 +8,12 @@ namespace BoTech.ApiClient.LibreTranslate.Models.Responses
         /// describes how sure the server is with the translation.
         /// </summary>
         [JsonPropertyName("confidence")]
-        public double Confidence { get; set; }
+        public double Confidence { get; init; }
 
         /// <summary>
         /// The code of the detected language.
         /// </summary>
         [JsonPropertyName("language")]
-        public string LanguageCode { get; set; } = "";
+        public string LanguageCode { get; init; } = "";
     }
 }

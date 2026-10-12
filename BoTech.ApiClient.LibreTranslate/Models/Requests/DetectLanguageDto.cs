@@ -12,6 +12,6 @@ namespace BoTech.ApiClient.LibreTranslate.Models.Requests
         /// The text to run the language detection on. This is the text that will be analyzed to determine its language.
         /// </summary>
         [JsonPropertyName("q")]
-        public string TextToDetectTheLanguageFor { get; set; } = "";
+        public required string TextToDetectTheLanguageFor { get; init; }
     }
 }

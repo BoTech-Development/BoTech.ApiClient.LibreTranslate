@@ -12,17 +12,17 @@ namespace BoTech.ApiClient.LibreTranslate.Models.Responses
         /// when requested, the collection contains other alternative translations.
         /// </summary>
         [JsonPropertyName("alternatives")]
-        public List<string> AlternativeTranslations { get; set; } = new List<string>();
+        public List<string> AlternativeTranslations { get; init; } = new List<string>();
         /// <summary>
         /// When necessary the server tries to detect the language of the give string.
         /// This object contains the language that might be the language of the given text to translate.
         /// </summary>
         [JsonPropertyName("detectedLanguage")]
-        public DetectedLanguageResult DetectedLanguage { get; set; } = new DetectedLanguageResult();
+        public DetectedLanguageResult DetectedLanguage { get; init; } = new DetectedLanguageResult();
         /// <summary>
         /// The translation of the given text 
         /// </summary>
         [JsonPropertyName("translatedText")]
-        public string TranslatedText { get; set; } = "";
+        public string TranslatedText { get; init; } = "";
     }
 }

@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Title>BoTech.ApiClient.LibreTranslate</Title>
     <Authors>www.botech.dev</Authors>
     <Description>A .net api client for https://LibreTranslate.com</Description>
@@ -13,16 +13,12 @@
     <PackageIcon>BoTechLogoSmall.drawio.png</PackageIcon>
     <RepositoryUrl>https://github.com/BoTech-Development/BoTech.ApiClient.LibreTranslate</RepositoryUrl>
     <PackageTags>Client LibreTranslate Translate</PackageTags>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>1.2.0</AssemblyVersion>
+    <FileVersion>1.2.0</FileVersion>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="BoTech.HttpClientHelper" Version="1.0.7-Alpha" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Update="BoTechLogoSmall.drawio.png">
@@ -37,6 +33,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BoTech.HttpClientHelper" Version="1.0.8-Alpha" />
   </ItemGroup>
 
 </Project>

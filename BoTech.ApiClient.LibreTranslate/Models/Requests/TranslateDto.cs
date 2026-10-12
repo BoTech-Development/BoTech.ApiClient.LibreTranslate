@@ -5,27 +5,26 @@ namespace BoTech.ApiClient.LibreTranslate.Models.Requests
     public class TranslateDto : DtoBase
     {
         [JsonPropertyName("q")]
-        public string TextToTranslate { get; set; } = "";
+        public required string TextToTranslate { get; init; }
         /// <summary>
         /// The language of <see cref="TextToTranslate"/> or "auto" when the language should be detected automatically
         /// </summary>
         [JsonPropertyName("source")]
-        public string SourceLanguageCode { get; set; } = "";
-
+        public required string SourceLanguageCode { get; init; } = "auto";
         /// <summary>
         /// The language into which the text (<see cref="TextToTranslate"/>) should be converted
         /// </summary>
         [JsonPropertyName("target")]
-        public string TargetLanguageCode { get; set; } = "";
+        public required string TargetLanguageCode { get; init; }
         /// <summary>
         /// The format of <see cref="TextToTranslate"/>
         /// </summary>
         [JsonPropertyName("format")]
-        public TextFormat FormatOfTextToTranslate { get; set; }
+        public required TextFormat FormatOfTextToTranslate { get; init; }
         /// <summary>
         /// Defines how many translation option should be created.
         /// </summary>
         [JsonPropertyName("alternatives")]
-        public int CountOfAlternativeTranslations { get; set; } = 0;
+        public required int CountOfAlternativeTranslations { get; init; }
     }
 }
